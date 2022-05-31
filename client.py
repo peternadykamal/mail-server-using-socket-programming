@@ -1,14 +1,14 @@
-from cgi import print_arguments
-from email import message
-import email
-from http import client
-from secrets import choice
+#from cgi import print_arguments
+# from email import message
+# import email
+#from http import client
+#from secrets import choice
+#from urllib import response
 from socket import socket
 import socket
 import pickle
 import os
 from pathlib import Path
-from urllib import response
 
 BUFFER_SIZE = 4096
 header = 64
@@ -309,43 +309,43 @@ while True:
     password = input("enter your password: ")
     print(sign_in(email,password))
   elif m == "3":
-    # email = input("enter your email: ")
-    # password = input("enter your password: ")
+    email = input("enter your email: ")
+    password = input("enter your password: ")
     
-    # toAccounts = ()
-    # x = input("enter number of to accounts: ")
-    # for i in range(int(x)):
-    #   addedValue = (input("enter to account: "),)
-    #   toAccounts = toAccounts + addedValue
+    toAccounts = ()
+    x = input("enter number of to accounts: ")
+    for i in range(int(x)):
+      addedValue = (input("enter to account: "),)
+      toAccounts = toAccounts + addedValue
     
-    # ccAccounts = ()
-    # x = input("enter number of cc accounts: ")
-    # for i in range(int(x)):
-    #   addedValue = (input("enter cc account: "),)
-    #   ccAccounts = ccAccounts + addedValue
+    ccAccounts = ()
+    x = input("enter number of cc accounts: ")
+    for i in range(int(x)):
+      addedValue = (input("enter cc account: "),)
+      ccAccounts = ccAccounts + addedValue
     
-    # bccAccounts = ()
-    # x = input("enter number of bcc accounts: ")
-    # for i in range(int(x)):
-    #   addedValue = (input("enter bcc account: "),)
-    #   bccAccounts = bccAccounts + addedValue
+    bccAccounts = ()
+    x = input("enter number of bcc accounts: ")
+    for i in range(int(x)):
+      addedValue = (input("enter bcc account: "),)
+      bccAccounts = bccAccounts + addedValue
     
-    # subject = input("enter email subject: ")
-    # body = input("enter email body: ")
+    subject = input("enter email subject: ")
+    body = input("enter email body: ")
     
-    # fileLocations = ()
-    # attachedFilesNo = input("enter number of attached files: ")
-    # for i in range(int(attachedFilesNo)):
-    #   addedValue = (input("enter file path: "),)
-    #   fileLocations = fileLocations + addedValue
+    fileLocations = ()
+    attachedFilesNo = input("enter number of attached files: ")
+    for i in range(int(attachedFilesNo)):
+      addedValue = (input("enter file path: "),)
+      fileLocations = fileLocations + addedValue
     
-    # print(sending_email(email,password,toAccounts,ccAccounts,bccAccounts,subject,body,attachedFilesNo,fileLocations))
-        print(sending_email(
-      "mahmoud3erfan@computerdep.eg","0123456789",
-      ("seifossama@computerdep.eg",),("moroelmasery@computerdep.eg",),
-      ("peternady@computerdep.eg",),"new email with new files","hellooooo team",
-      2,("D:\wallpapers\gKov2He.png","D:\Term8\Computer Networks\sheets\CC431 - Sheet 1.pdf")
-    ))
+    print(sending_email(email,password,toAccounts,ccAccounts,bccAccounts,subject,body,attachedFilesNo,fileLocations))
+    #     print(sending_email(
+    #   "mahmoud3erfan@computerdep.eg","0123456789",
+    #   ("seifossama@computerdep.eg",),("moroelmasery@computerdep.eg",),
+    #   ("peternady@computerdep.eg",),"new email with new files","hellooooo team",
+    #   2,("D:\wallpapers\gKov2He.png","D:\Term8\Computer Networks\sheets\CC431 - Sheet 1.pdf")
+    # ))
   elif m == "4":
     email = input("enter your email: ")
     password = input("enter your password: ")

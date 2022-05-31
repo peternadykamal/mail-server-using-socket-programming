@@ -1,8 +1,8 @@
+# from operator import truediv
+#import time
 from concurrent.futures import thread
-from operator import truediv
 import socket
 import threading
-import time
 import pickle
 import mysql.connector
 import os
